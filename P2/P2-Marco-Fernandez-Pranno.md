@@ -2,7 +2,7 @@
 ### *Marco Manuel Fernández Pranno*
 
 **1. Prueba de funcionamiento de la copia de archivos por ssh:**
-
+![alt text][envio-claves]
 **2. Clonado de una carpeta entre las dos máquinas**
 
 **3. Configuración de ssh para acceder sin que solicite contraseña.**
