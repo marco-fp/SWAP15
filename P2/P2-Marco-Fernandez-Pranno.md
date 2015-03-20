@@ -12,3 +12,6 @@
 
 
 [envio-claves]: https://github.com/MarFerPra/SWAP15/blob/master/P2/imagenes/envio-claves.png?raw=true
+[envio-claves-root]: https://github.com/MarFerPra/SWAP15/blob/master/P2/imagenes/envio-claves-root.png?raw=true
+[envio-por-ssh]: https://github.com/MarFerPra/SWAP15/blob/master/P2/imagenes/envio-por-ssh.png?raw=true
+[envio-fichero]: https://github.com/MarFerPra/SWAP15/blob/master/P2/imagenes/envio_fichero.png?raw=true
