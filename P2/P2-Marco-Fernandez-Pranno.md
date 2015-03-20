@@ -13,6 +13,12 @@ Posteriormente introducimos la contraseña del usuario seleccionado para el logi
 
 **2. Clonado de una carpeta entre las dos máquinas**
 
+Para el clonado de un fichero entre dos máquinas he utilizado la orden rsync, sincronizando el directorio home de el servidor 1 en el directorio home del el servidor 2. Para hacerlo, he utilizado la siguiente orden lanzada desde el servidor 2:
+
+` rsync -avc -c ssh user01@192.168.24.128:/home/user01/ /home/user02/ `
+
+![alt text][envio-fichero]
+
 **3. Configuración de ssh para acceder sin que solicite contraseña.**
 
 **4. Establecer una tarea en cron que se ejecute cada hora para mantener actualizado el contenido del directorio /var/www entre las dos máquinas.**
