@@ -2,8 +2,11 @@
 ### *Marco Manuel Fernández Pranno*
 
 **1. Prueba de funcionamiento de la copia de archivos por ssh:**
+
 El envío de un fichero por ssh se realiza mediante la compresión del mismo primero y después con un cauce hacia la ejecución del ssh con un cat como argumento. La orden a introducir en el terminal sería: 
+
 ` tar czf - directorio_envio_comprimido | ssh root@192.168.24.129 'cat > ~/tar.tgz' `
+
 Posteriormente introducimos la contraseña del usuario seleccionado para el login, en este caso el root. Y podemos ver como se ha enviado correctamente mediante el listado de elementos en el fichero del otro servidor.
 
 ![alt text][envio-por-ssh]
