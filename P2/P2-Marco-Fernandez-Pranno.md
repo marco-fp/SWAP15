@@ -40,6 +40,13 @@ Debido a que me ha sido imposible configurar la conexión sin contraseña por ss
     Como root:
     ![alt text][envio-claves-root]
 
+ Una vez hecho esto, en cada directorio home de los usuarios (y del root), en .ssh/authorized_keys aparecen reflejadas las claves permitidas para el login sin contraseña.
+ Debido a que no podía realizarlo como root, me he asegurado de que el fichero de configuración de ssh en ambos servidores estuviese correctamente, en ambos casos consta "PermitRootLogin yes". Tal y como se refleja en la captura:
+ 
+ ![alt txt][permitir-acceso-root]
+ 
+ 
+
 **4. Establecer una tarea en cron que se ejecute cada hora para mantener actualizado el contenido del directorio /var/www entre las dos máquinas.**
 
 
