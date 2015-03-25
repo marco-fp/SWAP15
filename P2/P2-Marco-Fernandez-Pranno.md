@@ -49,7 +49,20 @@ Debido a que me ha sido imposible configurar la conexión sin contraseña por ss
 
 **4. Establecer una tarea en cron que se ejecute cada hora para mantener actualizado el contenido del directorio /var/www entre las dos máquinas.**
 
+Para realizar este ejercicio basta con agregar una linea en el fichero crontab con la sintaxis correcta y la ejecución de una orden o script en concreto.
+Para facilitar el manejo de más acciones cada hora he optado por escribir un script y ejecutar el script en lugar de incluir en la sentencia crontab la orden de copia directamente.
+La orden es la siguiente:
 
+` rsyn -avz -e ssh usuario@ip-maquina-remota:/var/www/ /var/www `
+
+En el caso de la captura se refleja el usuario root ya que fue el primero con el que probé la ejecución, pero como ya he mencionado anteriormente, es necesario escribir contraseña en cada conexión.
+La sentencia agregada a crontab es la siguiente:
+
+` 01 *  * * *   root  /root/www-updater `
+
+En la captura se ve lo descrito en ambos casos:
+
+![alt text][update-www]
 
 [envio-claves]: https://github.com/MarFerPra/SWAP15/blob/master/P2/imagenes/envio-claves.png?raw=true
 [envio-claves-root]: https://github.com/MarFerPra/SWAP15/blob/master/P2/imagenes/envio-claves-root.png?raw=true
