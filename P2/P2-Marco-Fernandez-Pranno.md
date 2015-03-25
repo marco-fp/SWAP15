@@ -21,6 +21,25 @@ Para el clonado de un fichero entre dos máquinas he utilizado la orden rsync, s
 
 **3. Configuración de ssh para acceder sin que solicite contraseña.**
 
+Debido a que me ha sido imposible configurar la conexión sin contraseña por ssh con usuario root, he realizado el ejercicio mediante un usuario normal. Por otro lado, los pasos a seguir en ambos casos han sido los mismos:
+
+  * Generación de claves en ambas máquinas mediante la orden ` ssh-keygen -t dsa ` tal y como se muestra en las siguientes capturas:
+  
+  Como usuario:
+  ![alt text][generacion-claves] 
+  Como root:
+  ![alt text][generacion-claves-root]
+
+  
+  * Posteriormente he llevado a cabo el envío de las claves públicas de una máquina a otra con la orden 
+    ` ssh-copy-id -i nombre-de-la-clave.pub nombre-usuario@ip-de-la-maquina-receptora `. Tal y como se refleja en las      capturas:
+    
+    Como usuario:
+    ![alt text][envio-claves]
+
+    Como root:
+    ![alt text][envio-claves-root]
+
 **4. Establecer una tarea en cron que se ejecute cada hora para mantener actualizado el contenido del directorio /var/www entre las dos máquinas.**
 
 
