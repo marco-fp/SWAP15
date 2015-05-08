@@ -1,7 +1,7 @@
 ## Práctica 3 - Servidores Web de Altas Prestaciones (2015)
 ### *Marco Manuel Fernández Pranno*
 
-** 1. Instalación de Nginx y Haproxy: **
+**1. Instalación de Nginx y Haproxy:**
 En ambos casos he realizado la instalación tal y como se indica en el guión de la práctica.
 Haproxy directamente escribiendo en un terminal:
 
@@ -17,7 +17,7 @@ Descarga de la clase:
 Añadiendo repositorio:
 
 `echo "deb http://nginx.org/packages/ubuntu/ lucid nginx" >> /etc/apt/sources.list
-echo "deb-src http://nginx.org/packages/ubuntu/ lucid nginx" >> /etc/apt/sources.list`
+ echo "deb-src http://nginx.org/packages/ubuntu/ lucid nginx" >> /etc/apt/sources.list`
 
 Por último:
 
