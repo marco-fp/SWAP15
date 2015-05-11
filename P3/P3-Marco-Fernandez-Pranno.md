@@ -56,3 +56,11 @@ He instalado en la misma máquina tanto haproxy como nginx, deteniendo el servic
 * Haproxy - Con peso 2 - 1 entre servidores.
 
 ![alt text][haproxy-weight]
+
+
+[index-html]: https://github.com/MarFerPra/SWAP15/blob/master/P3/imagenes/index-html.png?raw=true
+[nginx-round]: https://github.com/MarFerPra/SWAP15/blob/master/P3/imagenes/nginx-round.png?raw=true
+[nginx-weight]: https://github.com/MarFerPra/SWAP15/blob/master/P3/imagenes/nginx-weight.png?raw=true
+[cultnginx-weight]: https://github.com/MarFerPra/SWAP15/blob/master/P3/imagenes/curlnginx-weight.png?raw=true
+[haproxy-roundrobin]: https://github.com/MarFerPra/SWAP15/blob/master/P3/imagenes/haproxy-roundrobin.png?raw=true
+[haproxy-weight]: https://github.com/MarFerPra/SWAP15/blob/master/P3/imagenes/haproxy-weight.png?raw=true
