@@ -44,3 +44,15 @@ Las tablas de datos recogidos son las siguientes:
  <tr><td>RxS:</td><td>7,29</td><td>7,18</td><td>6,06</td><td>6,74</td><td>4,05</td><td>7,35</td><td>7,25</td><td>7,33</td><td>7,29</td><td>3,23</td><td>6,377</td><td>1,5084874691</td></tr>
 </table>
 
+ * Haproxy - Round Robin
+<table class="tableizer-table">
+<tr class="tableizer-firstrow"><th></th><th>Test 1</th><th>Test 2</th><th>Test 3</th><th>Test 4</th><th>Test 5</th><th>Test 6</th><th>Test 7</th><th>Test 8</th><th>Test 9</th><th>Test 10</th><th>MEDIA</th><th>VARIANZA</th></tr>
+ <tr><td>TTFT:</td><td>142,201</td><td>150,871</td><td>186,963</td><td>133,486</td><td>133,902</td><td>135,423</td><td>137,76</td><td>134,45</td><td>134,773</td><td>135,763</td><td>142,5592</td><td>16,481342622</td></tr>
+ <tr><td>FR:</td><td>105</td><td>97</td><td>116</td><td>111</td><td>99</td><td>96</td><td>127</td><td>117</td><td>116</td><td>111</td><td>109,5</td><td>10,1132476375</td></tr>
+ <tr><td>RxS:</td><td>7,03</td><td>6,63</td><td>5,35</td><td>7,49</td><td>7,47</td><td>7,38</td><td>7,26</td><td>7,44</td><td>7,42</td><td>7,37</td><td>7,084</td><td>0,6641318477</td></tr>
+</table>
+
+* Siege:
+ * Servidor Individual
+ * Nginx - Round Robin
+ * Haproxy - Round Robin
