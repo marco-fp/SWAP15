@@ -1,5 +1,3 @@
-
-
 ## Práctica 4 - Servidores Web de Altas Prestaciones (2015)
 ### *Marco Manuel Fernández Pranno*
 
@@ -10,6 +8,12 @@ Las órdenes, respectivamente, utilizadas en Apache Benchmark y en Siege para la
 `ab -n 1000 -c 5 http://<Ip_Objetivo>/carga.php`
 
 `siege -b -t60S -v http://<Ip_Objetivo>/carga.php`
+
+En el caso del Apache Benchmark, el resultado de la ejecución es el siguiente: 
+
+![alt txt][ab-server]
+
+Por otro lado, dado que Siege muestra por pantalla cada petición realizada, he obviado añadir una captura de su ejecución.
 
 En cada caso de han tomado 10 medidas de las variables propuestas en el guión de prácticas, siendo éstas en Apache Benchmark:
 * Time taken from tests
