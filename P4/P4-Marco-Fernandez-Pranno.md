@@ -28,7 +28,7 @@ Con ambas aplicaciones he realizado 3 baterías de pruebas, una en el servidor i
 Las tablas de datos recogidos son las siguientes:
 
 * Apache Benchmark:
-** Servidor Individual
+ * Servidor Individual
 </style><table class="tableizer-table">
 <th></th><th>Test 1</th><th>Test 2</th><th>Test 3</th><th>Test 4</th><th>Test 5</th><th>Test 6</th><th>Test 7</th><th>Test 8</th><th>Test 9</th><th>Test 10</th><th>MEDIA</th><th>VARIANZA</th></tr>
  <tr><td>TTFT:</td><td>263,39</td><td>262,389</td><td>265,72</td><td>266,675</td><td>263,045</td><td>263,938</td><td>265,421</td><td>266,539</td><td>265,667</td><td>265,683</td><td>264,8467</td><td>1,5240824599</td></tr>
