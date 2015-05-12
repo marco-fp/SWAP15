@@ -79,3 +79,13 @@ Las tablas de datos recogidos son las siguientes:
  <tr><td>R.Time:</td><td>2,05</td><td>2,04</td><td>2,83</td><td>2,05</td><td>2,7</td><td>2,01</td><td>2,01</td><td>2,68</td><td>2,01</td><td>3,46</td><td>2,384</td><td>0,5061005609</td></tr>
  <tr><td>T.Rate:</td><td>7,19</td><td>7,2</td><td>4,97</td><td>7,18</td><td>5,47</td><td>7,28</td><td>7,34</td><td>5,48</td><td>7,29</td><td>4,14</td><td>6,354</td><td>1,209464528</td></tr>
 </table>
+
+Las gráficas en las que se ven representados la media y la varianza de los datos, son las siguientes:
+
+* Apache Benchmark:
+
+![alt text][ab-medias] ![alt text][ab-varianza]
+
+* Siege:
+
+![alt text][siege-medias] ![alt text][siege-varianza]
