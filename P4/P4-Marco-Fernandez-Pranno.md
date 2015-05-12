@@ -89,3 +89,10 @@ Las gráficas en las que se ven representados la media y la varianza de los dato
 * Siege:
 
 ![alt text][siege-medias] ![alt text][siege-varianza]
+
+[ab-server]: https://github.com/MarFerPra/SWAP15/blob/master/P4/imagenes/ab-server.png?raw=true
+[ab-medias]: https://github.com/MarFerPra/SWAP15/blob/master/P4/imagenes/ab-medias.png?raw=true
+[ab-varianza]: https://github.com/MarFerPra/SWAP15/blob/master/P4/imagenes/ab-varianza.png?raw=true
+[siege-medias]: https://github.com/MarFerPra/SWAP15/blob/master/P4/imagenes/siege-medias.png?raw=true
+[siege-varianza]: https://github.com/MarFerPra/SWAP15/blob/master/P4/imagenes/siege-varianza.png?raw=true
+
