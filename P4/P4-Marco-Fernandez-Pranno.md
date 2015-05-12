@@ -35,3 +35,10 @@ Las tablas de datos recogidos son las siguientes:
  <tr><td>FR:</td><td>108</td><td>101</td><td>73</td><td>92</td><td>102</td><td>91</td><td>106</td><td>112</td><td>99</td><td>97</td><td>98,1</td><td>11,0398268908</td></tr>
  <tr><td>RxS:</td><td>3,8</td><td>3,81</td><td>3,76</td><td>3,75</td><td>3,8</td><td>3,79</td><td>3,77</td><td>3,75</td><td>3,76</td><td>3,76</td><td>3,775</td><td>0,0227303028</td></tr>
 </table>
+
+ * Nginx - Round Robin
+<tr class="tableizer-firstrow"><th></th><th>Test 1</th><th>Test 2</th><th>Test 3</th><th>Test 4</th><th>Test 5</th><th>Test 6</th><th>Test 7</th><th>Test 8</th><th>Test 9</th><th>Test 10</th><th>MEDIA</th><th>VARIANZA</th></tr>
+ <tr><td>Time taken for tests: (sec)</td><td>137,179</td><td>139,243</td><td>165,013</td><td>148,306</td><td>246,813</td><td>136,053</td><td>136,053</td><td>136,361</td><td>137,11</td><td>309,156</td><td>169,1287</td><td>59,9016607098</td></tr>
+ <tr><td>Failed requests:</td><td>100</td><td>117</td><td>92</td><td>102</td><td>97</td><td>113</td><td>104</td><td>90</td><td>101</td><td>93</td><td>100,9</td><td>8,7743312502</td></tr>
+ <tr><td>Requests per second:</td><td>7,29</td><td>7,18</td><td>6,06</td><td>6,74</td><td>4,05</td><td>7,35</td><td>7,25</td><td>7,33</td><td>7,29</td><td>3,23</td><td>6,377</td><td>1,5084874691</td></tr>
+</table>
