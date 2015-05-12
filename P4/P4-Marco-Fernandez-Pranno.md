@@ -54,5 +54,28 @@ Las tablas de datos recogidos son las siguientes:
 
 * Siege:
  * Servidor Individual
+<table class="tableizer-table">
+<tr class="tableizer-firstrow"><th></th><th>Test 1</th><th>Test 2</th><th>Test 3</th><th>Test 4</th><th>Test 5</th><th>Test 6</th><th>Test 7</th><th>Test 8</th><th>Test 9</th><th>Test 10</th><th>MEDIA</th><th>VARIANZA</th></tr>
+ <tr><td>AV:</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>0</td></tr>
+ <tr><td>E.Time:</td><td>59,8</td><td>59,53</td><td>59,37</td><td>59,62</td><td>59,13</td><td>59,32</td><td>59,58</td><td>59,06</td><td>59,75</td><td>59,69</td><td>59,485</td><td>0,2555712556</td></tr>
+ <tr><td>R.Time:</td><td>3,92</td><td>3,94</td><td>3,92</td><td>3,93</td><td>3,95</td><td>3,92</td><td>3,93</td><td>3,92</td><td>3,95</td><td>3,97</td><td>3,935</td><td>0,0171593836</td></tr>
+ <tr><td>T.Rate:</td><td>3,73</td><td>3,71</td><td>3,72</td><td>3,71</td><td>3,72</td><td>3,73</td><td>3,71</td><td>3,74</td><td>3,7</td><td>3,7</td><td>3,717</td><td>0,0133749351</td></tr>
+</table>
+ 
  * Nginx - Round Robin
+ <table class="tableizer-table">
+<tr class="tableizer-firstrow"><th></th><th>Test 1</th><th>Test 2</th><th>Test 3</th><th>Test 4</th><th>Test 5</th><th>Test 6</th><th>Test 7</th><th>Test 8</th><th>Test 9</th><th>Test 10</th><th>MEDIA</th><th>VARIANZA</th></tr>
+ <tr><td>AV:</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>0</td></tr>
+ <tr><td>E.Time:</td><td>59,8</td><td>59,6</td><td>60</td><td>59,81</td><td>59,19</td><td>59,5</td><td>59,97</td><td>59,6</td><td>59,59</td><td>59,59</td><td>59,665</td><td>0,2396872963</td></tr>
+ <tr><td>R.Time:</td><td>2,01</td><td>2,03</td><td>2,02</td><td>2,01</td><td>2,01</td><td>2,01</td><td>2,01</td><td>2,01</td><td>3,53</td><td>2,02</td><td>2,166</td><td>0,4793096888</td></tr>
+ <tr><td>T.Rate:</td><td>7,31</td><td>7,25</td><td>7,32</td><td>7,34</td><td>7,3</td><td>7,26</td><td>7,32</td><td>7,33</td><td>4,08</td><td>7,3</td><td>6,981</td><td>1,0197107433</td></tr>
+</table>
+
  * Haproxy - Round Robin
+<table class="tableizer-table">
+<tr class="tableizer-firstrow"><th></th><th>Test 1</th><th>Test 2</th><th>Test 3</th><th>Test 4</th><th>Test 5</th><th>Test 6</th><th>Test 7</th><th>Test 8</th><th>Test 9</th><th>Test 10</th><th>MEDIA</th><th>VARIANZA</th></tr>
+ <tr><td>AV:</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>0</td></tr>
+ <tr><td>E.Time:</td><td>59,55</td><td>59,57</td><td>59,8</td><td>59,86</td><td>59,1</td><td>59,3</td><td>59,28</td><td>59,11</td><td>59,02</td><td>59,47</td><td>59,406</td><td>0,2925823721</td></tr>
+ <tr><td>R.Time:</td><td>2,05</td><td>2,04</td><td>2,83</td><td>2,05</td><td>2,7</td><td>2,01</td><td>2,01</td><td>2,68</td><td>2,01</td><td>3,46</td><td>2,384</td><td>0,5061005609</td></tr>
+ <tr><td>T.Rate:</td><td>7,19</td><td>7,2</td><td>4,97</td><td>7,18</td><td>5,47</td><td>7,28</td><td>7,34</td><td>5,48</td><td>7,29</td><td>4,14</td><td>6,354</td><td>1,209464528</td></tr>
+</table>
