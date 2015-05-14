@@ -52,16 +52,36 @@ Tal y como se refleja en las siguientes capturas:
 
 **Configuración Maestro-Esclavo para la sincronización de base de datos y backup:**
 
-En primer lugar, accedemos al fichero de configuración de mysql en /etc/mysql/my.sql y editamos los siguientes apartados:
+En primer lugar, en el servidor Maestro accedemos al fichero de configuración de mysql en /etc/mysql/my.sql y editamos los siguientes apartados:
 
   1. Comentar: `(#)bind-address 127.0.0.1`
   2. Configurar (viene por defecto): `log_error = /var/log/mysql/error.log`
   3. `server-id = 1 `
   4. `log_bin = /var/log/mysql/bin.log`
 
-Guardamos la configuración y reiniciamos el servicio con: `/etc/init.d/mysql restart`
+Guardamos la configuración y reiniciamos el servicio con: `/etc/init.d/mysql restart`.
 
+Repetimos estos mismos pasos en el fichero de configuración del Esclavo. Seguidamente, en éste último, accedemos a la consola de mysql y tecleamos lo siguiente:
 
+`mysql> CHANGE MASTER TO MASTER_HOST="192.168.24.128";`
+
+`mysql> MASTER_USER="esclavo", MASTER_PASSWORD="esclavo";` 
+
+`mysql> MASTER_LOG_FILE="mysql-bin.000001", MASTER_LOG_POS=501, MASTER_PORT=3306;`
+
+Y por último, en el Maestro:
+
+`mysql> CREATE USER esclavo IDENTIFIED BY 'esclavo';`
+
+`mysql> GRANT REPLICATION SLAVE ON *.* TO 'esclavo'@'%' IDENTIFIED BY 'esclavo';`
+
+`mysql> FLUSH PRIVILEGES;`
+
+`mysql> FLUSH TABLES;`
+
+Una vez hecho esto, tenemos la configuración preparada para la sincronización, solo queda ejecutar la orden en el servidor esclavo:
+
+`mysql> start slave;`
 
 [creacion-tabla]: https://github.com/MarFerPra/SWAP15/blob/master/P5/imagenes/creacion-tabla.png?raw=true
 [manual-slave]: https://github.com/MarFerPra/SWAP15/blob/master/P5/imagenes/manual-slave.png?raw=true
