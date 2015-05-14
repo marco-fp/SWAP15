@@ -28,6 +28,14 @@ Mediante la orden `mdadm --detail /dev/md0` vemos en pantalla la información de
 
 **Generación de fallo, reinicio y añadido del disco.**
 
+Antes que nada, creo un archivo de texto con información dentro del directorio en raid. Seguidamente, genero un fallo en el disco sdc mediante la siguiente orden:
+
+`mdadm --manage --set-faulty /dev/md0 /dev/sdc`
+
+Inmediatamente vemos el mensaje en pantalla reportando el error y el dispositivo desactivándose. De nuevo, si ejecutamos la orden `mdadm --detail /dev/md0` vemos en este caso que han cambiado las características:
+
+![alt text][generacion-fallo]
+
 
 
 
