@@ -36,8 +36,11 @@ Inmediatamente vemos el mensaje en pantalla reportando el error y el dispositivo
 
 ![alt text][generacion-fallo]
 
+Una vez hecho esto, reiniciamos el sistema y con la ayuda de `fdisk -l` vemos el nombre actual del dispositivo sobre el que está montado la raid, en este caso es md127. Ejecutando la orden para ver los detalles y posteriormente con `mdadm /dev/md127 -a /dev/sdc` volvemos a añadir el disco dañado a la raid.
 
+![alt text][aniadir-disco]
 
+![alt text][disco-aniadido]
 
 
 [fdisk]: https://github.com/MarFerPra/SWAP15/blob/master/P6/imagenes/fdisk.png?raw=true
