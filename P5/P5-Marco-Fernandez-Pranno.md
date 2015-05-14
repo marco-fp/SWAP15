@@ -103,6 +103,8 @@ Una vez hecho ésto, la sincronización  funcionó perfectamente.
 
 **Capturas de pantalla y muestra de funcionamiento:**
 
+Izquierda Maestro - Derecha Esclavo.
+
 ![alt text][automatico-master-slave]
 
 ![alt text][automatico-prueba]
