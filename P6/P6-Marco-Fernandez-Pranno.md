@@ -22,6 +22,12 @@ Y lo montamos con: `mount /dev/md0 /datos-raid/`
 
 ![alt text][creacion-raid]
 
+Mediante la orden `mdadm --detail /dev/md0` vemos en pantalla la información de la RAID y su estado:
+
+![alt text][detalles-raid]
+
+**Generación de fallo, reinicio y añadido del disco.**
+
 
 
 
