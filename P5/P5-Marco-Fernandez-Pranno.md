@@ -40,7 +40,7 @@ Y por último:
 Tal y como se refleja en las siguientes capturas:
 
 (En el Maestro)
-![alt text][manual-master
+![alt text][manual-master]
 
 (En el Esclavo)
 ![alt text][manual-slave]
