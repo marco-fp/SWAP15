@@ -13,9 +13,37 @@ Insertamos una entrada con:
 
 `insert into datos(nombre,tlf) values ("K.Mitnick",13371337);`
 
+El resultado es el siguiente:
 
+![alt text][creacion-tabla]
 
+**Copia de seguridad manual entre máquinas de la base de datos:**
 
+La copia de seguridad la realizamos con las siguientes órdenes (en la máquina Maestro), siguiendo los pasos indicados en el guión de prácticas:
+
+`mysqldump contactos -u root -p > /root/contactos.sql`
+
+Antes de la órden anterior, hay que salvar las tablas con un lock de lectura para que los datos no se alteren en el proceso de salvado. Y al finalizar la ejecución de mysqldump, desbloquearlas.
+En mysql:
+
+`mysql> FLUSH TABLES WITH READ LOCK;`
+`mysql> UNLOCK TABLES;`
+
+Ahora, desde la máquina esclavo, accedemos por ssh (usando scp) a la máquina maestro para copiar el archivo contactos.sql. Antes de ésto, es necesario crear la base de datos:
+
+`mysql> create database contactos;`
+
+Y por último:
+
+`mysql -u root -p contactos < /root/contactos.sql`
+
+Tal y como se refleja en las siguientes capturas:
+
+(En el Maestro)
+![alt text][manual-master
+
+(En el Esclavo)
+![alt text][manual-slave]
 
 
 
