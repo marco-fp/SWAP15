@@ -83,6 +83,30 @@ Una vez hecho esto, tenemos la configuración preparada para la sincronización,
 
 `mysql> start slave;`
 
+**Problemas encontrados y resolución:**
+
+El ejecutar la última sentencia, y las órdenes para visualizar el estado en las dos máquinas:
+
+`mysql> show master status;`
+
+`mysql> show slave status \G`
+
+Me encontré con el problema de que Seconds_Behind_Master estaba a NULL, y Slave_IO_running en NO.
+
+En el último log de error me encontré lo siguiente:
+
+`Got fatal error 1236 from master when reading data from binary log: "Could not find first log file name in binary log index file"`
+
+Es decir, los ficheros binarios de logs no estaban sincronizados entre las máquinas y utilizaban uno distinto. Después de indagar un poco con las opciones ` purge binary logs [opciones]` y sus capacidades, vi más sencillo utilizar un ` reset master` y borrar todos los logs. 
+
+Una vez hecho ésto, la sincronización  funcionó perfectamente.
+
+**Capturas de pantalla y muestra de funcionamiento:**
+
+![alt text][automatico-master-slave]
+
+![alt text][automatico-prueba]
+
 [creacion-tabla]: https://github.com/MarFerPra/SWAP15/blob/master/P5/imagenes/creacion-tabla.png?raw=true
 [manual-slave]: https://github.com/MarFerPra/SWAP15/blob/master/P5/imagenes/manual-slave.png?raw=true
 [manual-master]: https://github.com/MarFerPra/SWAP15/blob/master/P5/imagenes/manual-master.png?raw=true
