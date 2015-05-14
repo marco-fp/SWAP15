@@ -50,10 +50,16 @@ Tal y como se refleja en las siguientes capturas:
 
 ![alt text][manual-slave]
 
+**Configuración Maestro-Esclavo para la sincronización de base de datos y backup:**
 
+En primer lugar, accedemos al fichero de configuración de mysql en /etc/mysql/my.sql y editamos los siguientes apartados:
 
+  1. Comentar: `(#)bind-address 127.0.0.1`
+  2. Configurar (viene por defecto): `log_error = /var/log/mysql/error.log`
+  3. `server-id = 1 `
+  4. `log_bin = /var/log/mysql/bin.log`
 
-
+Guardamos la configuración y reiniciamos el servicio con: `/etc/init.d/mysql restart`
 
 
 
