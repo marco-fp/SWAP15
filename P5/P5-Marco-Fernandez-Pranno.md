@@ -6,7 +6,9 @@
 La creación de la tabla se realiza primeramente en el servidor que va a actuar como maestro, con las siguientes órdenes:
 
 `mysql -u root -p`
+
 `create database contactos;`
+
 `create table datos(nombre varchar(100),tlf int);`
 
 Insertamos una entrada con: 
@@ -27,6 +29,7 @@ Antes de la órden anterior, hay que salvar las tablas con un lock de lectura pa
 En mysql:
 
 `mysql> FLUSH TABLES WITH READ LOCK;`
+
 `mysql> UNLOCK TABLES;`
 
 Ahora, desde la máquina esclavo, accedemos por ssh (usando scp) a la máquina maestro para copiar el archivo contactos.sql. Antes de ésto, es necesario crear la base de datos:
