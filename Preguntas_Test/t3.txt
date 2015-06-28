@@ -1,0 +1,15 @@
+1. La configuración óptima para una granja web es:
+	a) DMZ Simple
+	b) DMZ Tradicional
+	c) DMZ Doble
+	d) Ninguna de las anteriores.
+	Respuesta correcta: C.
+
+2. Cual de las siguientes opciones no influye en la calidad de servicio:
+
+	a) Ancho de banda de conexión a internet.
+	b) Balanceo de carga entre servidores.
+	c) Filtrado y bloqueo de paquetes.
+	d) Doble conexión al front-rail y back-rail. 
+	Respuesta correcta: D.
+

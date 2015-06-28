@@ -1,0 +1,22 @@
+1. Si sabemos que es posible que el tráfico se incremente y los recursos configurados inicialmente sean insuficientes, la
+opción más sensata será:
+
+	a) Configurar una máquina individual para realizar todo el trabajo del servidor web, y renovarla llegado el momento.
+	b) Configurar varias máquinas formando una granja web, aunque sean de menores prestaciones que el servidor único, distribuyendo
+	   el trabajo equitativamente entre éstas. Considerando la posibilidad de un servidor de desarrollo para las pruebas de cambios.
+	c) Configurar una máquina individual, y además, un servidor de desarrollo para pruebas de cambios.
+	d) Todas las anteriores son incorrectas.
+
+	Respuesta correcta: B.
+
+2. Las prioridades o características que debemos tener en mente al configurar un servidor son:
+
+	a) Escalable, alta disponibilidad, robustez ante fallos, uso eficiente y responsable de recursos, correcta arquitectura 
+	   para el tráfico al que se someterá y los riesgos de seguridad.
+	b) Máxima facilidad de configuración e instalación, mínimo coste de adquisición para las funcionalidades mínimas.
+	c) Procurar que el sistema necesite mantenimiento constante y soporte para asegurarnos de tener trabajo todos los días.
+	d) Todas las anteriores son incorrectas.
+
+	Respuesta correcta: A.
+
+

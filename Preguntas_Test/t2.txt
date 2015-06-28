@@ -1,0 +1,24 @@
+1. La escalabilidad se refiere:
+
+	a) La velocidad frente a la poca complejidad de un sistema 		operativo instalado en un servidor para conceder permisos de 		superusuario a un atacante.
+	
+	b) El porcentaje de tiempo en el que el servidor puede prestar 		servicio a lo largo de un intervalo determinado.
+
+	c) La capacidad de un sistema de manejar la carga, y el esfuerzo 	 para adaptarse al nuevo nivel de carga.
+
+	d) Todas las anteriores son incorrectas.
+
+	Respuesta correcta: C.
+
+2. Para asegurarnos una mejor disponibilidad de los servicios:
+
+	a) La mejor opción es añadir más máquinas al sistema para 		repartir la carga.
+	
+	b) La mejor opción es buscar la redundancia en todos los 		recursos para evitar que en caso de fallo en un punto concreto, 	otro lo reemplace en el trabajo de forma inmediata.
+
+	c) La disponibilidad se consigue mediante una buena presentación 	 en la interfaz de usuario. A fin de que sea más fácil y 	   conveniente utilizar los recursos.
+	
+	d) Invertir mucho dinero en recursos para estar seguros de que 
+	   no se saturaran frente a la carga. 
+
+	Respuesta correcta: B.

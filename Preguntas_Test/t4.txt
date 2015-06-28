@@ -1,0 +1,20 @@
+1. Cual es de las siguientes tecnologías no hace referencia al balanceo de carga:
+
+	a) Optimización mediante "router-on-stick"
+	b) Clustering
+	c) GSLB
+	d) Balanceo de carga en cortafuegos
+
+Respuesta correcta: A.
+
+2. Cual de las siguientes afirmaciones es falsa:
+
+	a) Un balanceador basado en hardware es más potente 	 frente a uno basando en software, pero más costoso.
+
+	b) Un balanceo basado en Round Robin (por turnos) es 	adecuado para la carga de contenido dinámico en un 		 servidor web.
+	
+	c) Los algoritmos basados en ponderación dividen el 	trabajo segun el "peso" o capacidad computacional relativa de cada servidor, indicado en una configuración previa.
+
+	d) Se espera una bajada de precio en el futuro de las tecnologías de balanceo, así como una mejora en las funcionalidades y un aumento de prestaciones.
+
+Respuesta correcta: B.
